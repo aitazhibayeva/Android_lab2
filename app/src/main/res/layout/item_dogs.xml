@@ -36,6 +36,7 @@
             android:layout_marginLeft="12dp"
             android:layout_marginTop="5dp"
             android:fontFamily="sans-serif-medium"
+            android:textColor="@color/dark_brown"
             android:textSize="12sp"
             tools:text="Dog energy" />
 
@@ -46,6 +47,7 @@
             android:layout_marginLeft="12dp"
             android:layout_marginTop="4dp"
             android:fontFamily="sans-serif-medium"
+            android:textColor="@color/dark_brown"
             android:textSize="12sp"
             tools:text="Dog barking"/>
 
@@ -56,6 +58,7 @@
             android:layout_marginLeft="12dp"
             android:layout_marginTop="4dp"
             android:fontFamily="sans-serif-medium"
+            android:textColor="@color/dark_brown"
             android:textSize="12sp"
             tools:text="Dog trainability" />
 
@@ -66,6 +69,7 @@
             android:layout_marginLeft="12dp"
             android:layout_marginTop="4dp"
             android:fontFamily="sans-serif-medium"
+            android:textColor="@color/dark_brown"
             android:textSize="12sp"
             tools:text="Dog protectiveness" />
 
@@ -76,6 +80,7 @@
             android:layout_marginLeft="12dp"
             android:layout_marginTop="4dp"
             android:fontFamily="sans-serif-medium"
+            android:textColor="@color/dark_brown"
             android:textSize="12sp"
             tools:text="Dog playfulness" />
 
@@ -86,6 +91,7 @@
             android:layout_marginLeft="12dp"
             android:layout_marginTop="4dp"
             android:fontFamily="sans-serif-medium"
+            android:textColor="@color/dark_brown"
             android:textSize="12sp"
             tools:text="Dog max_height" />
     </LinearLayout>

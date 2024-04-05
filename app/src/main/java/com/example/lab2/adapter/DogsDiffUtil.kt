@@ -15,7 +15,6 @@ class DogsDiffUtil( private val oldList: List<Dog>, private val newList: List<Do
 
     override fun getOldListSize(): Int { return oldList.size
     }
-
     override fun getNewListSize(): Int {
         return newList.size
     }
