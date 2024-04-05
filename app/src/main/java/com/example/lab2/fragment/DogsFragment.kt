@@ -18,7 +18,6 @@ import retrofit2.Response
 class DogsFragment : Fragment() {
     private var _binding: FragmentDogsBinding? = null
     private val binding get() = _binding!!
-
     private val adapter = DogsAdapter()
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -51,6 +50,5 @@ class DogsFragment : Fragment() {
                     }})
                 true }
             else
-                false }
-    }
+                false }}
 }
