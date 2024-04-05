@@ -6,5 +6,4 @@ https://github.com/aitazhibayeva/Android_lab2/assets/115732176/b3cced32-b025-4d9
 <img src="screenshots/1.png" width="200">
 
 # Layout
-<img src="screenshots/2.png" width="200">
-<img src="screenshots/3.png" width="200">
+<img src="screenshots/2.png" width="200"> <img src="screenshots/3.png" width="200">
