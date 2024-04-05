@@ -16,16 +16,18 @@ import retrofit2.Callback
 import retrofit2.Response
 
 class DogsFragment : Fragment() {
-
     private var _binding: FragmentDogsBinding? = null
     private val binding get() = _binding!!
-    private val adapter = DogsAdapter()
 
+    private val adapter = DogsAdapter()
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        _binding = FragmentDogsBinding.inflate(inflater, container, false)
+        _binding = FragmentDogsBinding.inflate(
+            inflater,
+            container,
+            false)
         return binding.root
     }
 
@@ -33,8 +35,6 @@ class DogsFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         binding.list.adapter = adapter
         binding.list.layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.VERTICAL, false)
-
-
         binding.searchBar.setOnEditorActionListener{ it, actionId, _ ->
             if(actionId == android.view.inputmethod.EditorInfo.IME_ACTION_SEARCH){
                 ApiClient.instance.getDog(it.text.toString()).enqueue(object : Callback<List<Dog>>{
@@ -43,19 +43,14 @@ class DogsFragment : Fragment() {
                             response.body()?.let { it1 -> adapter.setItems(it1) }
                         }
                         else {
-                            Log.e("Network", response.errorBody().toString())
+                            Log.e("response", response.errorBody().toString())
                         }
                     }
-
                     override fun onFailure(call: Call<List<Dog>>, t: Throwable) {
-                        Log.e("Network", t.message.toString())
-                    }
-
-                })
-                true
-
-            }else false
-        }
+                        Log.e("response", t.message.toString())
+                    }})
+                true }
+            else
+                false }
     }
-
 }
